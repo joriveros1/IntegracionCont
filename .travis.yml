@@ -1,2 +1,17 @@
 #.travis.yml
-language: HTML 5
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+
+before_script:
+  - composer install --dev
+
+script: vendor/bin/phpunit --configuration phpunit.xml
+
+notifications:
+    email:
+        - jhonr2612@gmail.com
