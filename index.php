@@ -11,6 +11,9 @@
 </head>
     <!--CUERPO-->
 <body>
+  <?php
+    $var = 'Es una variable';
+   ?>
     <header class="header">
         <div class="container">
             <nav class="header__menu">
